@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Basic language of the web: HTML</title>
+    <link href="style.css" rel="stylesheet" />
   </head>
 
   <body>
-    <header>
+    <header class="main-header">
       <h1>📘 The Code Magazine</h1>
       <nav>
         <a href="blog.html"> Blog </a>
@@ -26,7 +27,9 @@
           height="50"
           width="50"
         />
-        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+        <p id="author">
+          Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+        </p>
         <img
           src="img/post-img.jpg"
           alt="Html code on a screen"
@@ -86,6 +89,7 @@
           Worpress or Wix
         </li>
         <li>build web applications To impress friends</li>
+        <li>To impress friends</li>
         <li>To have fun 😃</li>
       </ul>
       <p>Hopefully you learned something new here. See you next time!</p>
@@ -93,7 +97,7 @@
 
     <aside>
       <h4>Related posts</h4>
-      <ul>
+      <ul class="related">
         <li>
           <img
             src="img/related-1.jpg"
@@ -103,7 +107,7 @@
           /><a rel="noopener" href="#" target="_blank"
             >How to learn Web Development</a
           >
-          <p>By Jonas Schmedtmann</p>
+          <p class="related-author">By Jonas Schmedtmann</p>
         </li>
         <li>
           <img
@@ -114,7 +118,7 @@
           /><a rel="noopener" href="#" target="_blank"
             >The Unknown Powers of CSS</a
           >
-          <p>By Jim Dillon</p>
+          <p class="related-author">By Jim Dillon</p>
         </li>
         <li>
           <img
@@ -125,10 +129,12 @@
           /><a rel="noopener" href="#" target="_blank"
             >Why JavaScript is Awesome</a
           >
-          <p>By Matilda</p>
+          <p class="related-author">By Matilda</p>
         </li>
       </ul>
     </aside>
-    <footer>Copyright &copy; by The Code Magazine</footer>
+    <footer>
+      <p id="copyright">Copyright &copy; by The Code Magazine</p>
+    </footer>
   </body>
 </html>
